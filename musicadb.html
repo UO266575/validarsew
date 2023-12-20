@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="author" content="José Antonio Pérez Miguel">
+    <meta name="description" content="BD Música">
+    <meta name="keywords" content="Música, Canciones, Artistas, Comentarios, Distribuidoras, BD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escritorio Virtual - BD Música</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/viajes.css">
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+
+<body>
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="A" tabindex="1" href="agenda.html">Agenda</a>
+            <a accesskey="I" tabindex="2" href="index.html">Inicio</a>
+            <a accesskey="J" tabindex="3" href="juegos.html">Juegos</a>
+            <a accesskey="M" tabindex="4" href="meteorologia.html">Meteorología</a>
+            <a accesskey="N" tabindex="5" href="noticias.html">Noticias</a>
+            <a accesskey="S" tabindex="6" href="sobremi.html">Sobre mí</a>
+            <a accesskey="V" tabindex="7" href="viajes.php">Viajes</a>
+        </nav>
+    </header>
+    <h2>BD Música</h2>
+    <section>
+        <h3>Menú de Juegos</h3>
+        <ul>
+            <li><a href="memoria.html">Memoria</a></li>
+            <li><a href="sudoku.html">Sudoku</a></li>
+            <li><a href="crucigrama.php">Crucigrama</a></li>
+            <li><a href="api.html">ImageClipper</a></li>
+            <li><a href="musica.php">BD Música</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <form action="musica.php" method="post" enctype="multipart/form-data">
+            <h3>Importar Artistas</h3>
+            <input type="file" name="csvArtistas" accept=".csv">
+            <input type="submit" name="submitArtistas" value="Importar Artistas">
+        </form>
+
+        <form action="musica.php" method="post">
+            <input type="submit" name="downloadArtistas" value="Descargar CSV de Artistas">
+        </form>
+
+        <form action="musica.php" method="post" enctype="multipart/form-data">
+            <h3>Importar Canciones</h3>
+            <input type="file" name="csvCanciones" accept=".csv">
+            <input type="submit" name="submitCanciones" value="Importar Canciones">
+        </form>
+
+        <form action="musica.php" method="post">
+            <input type="submit" name="downloadCanciones" value="Descargar CSV de Canciones">
+        </form>
+
+        <form action="musica.php" method="post" enctype="multipart/form-data">
+            <h3>Importar Distribuidoras</h3>
+            <input type="file" name="csvDistribuidoras" accept=".csv">
+            <input type="submit" name="submitDistribuidoras" value="Importar Distribuidoras">
+        </form>
+
+        <form action="musica.php" method="post">
+            <input type="submit" name="downloadDistribuidoras" value="Descargar CSV de Distribuidoras">
+        </form>
+
+        <form action="musica.php" method="post" enctype="multipart/form-data">
+            <h3>Importar Comentarios</h3>
+            <input type="file" name="csvComentarios" accept=".csv">
+            <input type="submit" name="submitComentarios" value="Importar Comentarios">
+        </form>
+
+        <form action="musica.php" method="post">
+            <input type="submit" name="downloadComentarios" value="Descargar CSV de Comentarios">
+        </form>
+
+        <form action="musica.php" method="post" enctype="multipart/form-data">
+            <h3>Importar Géneros</h3>
+            <input type="file" name="csvGeneros" accept=".csv">
+            <input type="submit" name="submitGeneros" value="Importar Géneros">
+        </form>
+
+        <form action="musica.php" method="post">
+            <input type="submit" name="downloadGeneros" value="Descargar CSV de Generos">
+        </form>
+
+        <form action="musica.php" method="post">
+            <input type="submit" name="limpiarBD" value="Limpiar Base de Datos" onclick="return confirm('¿Estás seguro?');">
+        </form>
+
+    </main>
+
+
+</body></html>
