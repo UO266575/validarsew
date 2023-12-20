@@ -1,0 +1,53 @@
+/* Especificidad = 1 */
+main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+/* Especificidad = 1 */
+p {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Especificidad = 11 */
+p[data-state="clicked"] {
+    border: 4px solid #ccc;
+}
+
+/* Especificidad = 11 */
+p:not([data-state="blocked"]) {
+    cursor: pointer;
+}
+
+/* Especificidad = 11 */
+p:nth-child(-n+10) {
+    border-top: 4px solid #5a5959;
+}
+
+/* Especificidad = 11 */
+p:nth-last-child(-n+9),
+p:nth-child(n+20):nth-child(-n+28),
+p:nth-child(n+47):nth-child(-n+55) {
+    border-bottom: 4px solid #5a5959;
+}
+
+/* Especificidad = 11 */
+p:nth-child(9n+1) {
+    border-right: 4px solid #5a5959;
+}
+
+/* Especificidad = 11 */
+p:nth-child(9n+2),
+p:nth-child(9n+5),
+p:nth-child(9n+8) {
+    border-left: 4px solid #5a5959;
+}

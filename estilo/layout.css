@@ -1,0 +1,29 @@
+/* José Antonio Pérez Miguel - UO266575 */
+
+/* Especificidad = 1 */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Especificidad = 1 */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    /* Especificidad = 1 */
+    header {
+        text-align: center;
+    }
+
+    /* Especificidad = 1 */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}

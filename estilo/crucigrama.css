@@ -1,0 +1,81 @@
+/* Especificidad = 1 */
+article {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    width: 30vw;
+    height: 30vw;
+    min-width: 20em;
+    min-height: 20em;
+    margin: auto;
+    margin-bottom: 6em;
+}
+
+/* Especificidad = 1 */
+p {
+    box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+    line-height: 3vw;
+    font-size: calc(12px + 1.5vw);
+
+    /* font-size: 2em; */
+    margin: 0;
+}
+
+/* Especificidad = 11 */
+p[data-state="empty"] {
+    background-color: black;
+}
+
+/* Especificidad = 11 */
+p[data-state="clicked"] {
+    border: 6px solid #c8ff00;
+}
+
+/* Especificidad = 21 */
+p:not([data-state="blocked"]):not([data-state="empty"]) {
+    cursor: pointer;
+}
+
+/* Especificidad = 31 */
+p:not([data-state="blocked"]):not([data-state="empty"]):hover {
+    background-color: rgb(235, 219, 219);
+}
+
+/* Especificidad = 11 */
+section[data-type=botonera] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Especificidad = 11 */
+    section[data-type=botonera] {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Especificidad = 1 */
+    p {
+        line-height: 5vw;
+    }
+}
+
+/* Especificidad = 12 */
+section[data-type=botonera] h2 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Especificidad = 12 */
+section[data-type=botonera] button {
+    width: calc(15% - 1em);
+    height: 4em;
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+}

@@ -1,0 +1,56 @@
+/* Especificidad = 1 */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+/* Especificidad = 11 */
+main> :first-child {
+    width: 100%;
+    text-align: center;
+}
+
+/* Especificidad = 1 */
+article {
+    box-sizing: border-box;
+    width: calc(20%);
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+/* Especificidad = 2 */
+article img {
+    transform: rotateY(180deg);
+    top: -25%;
+}
+
+/* Especificidad = 2 */
+article h3 {
+    position: relative;
+    top: 25%;
+}
+
+/* Especificidad = 2 */
+article img,
+h3 {
+    backface-visibility: hidden;
+    position: relative;
+}
+
+/* Especificidad = 11 */
+article[data-state="revealed"] {
+    transform: rotateY(180deg);
+}
+
+/* Especificidad = 11 */
+article[data-state="flip"] {
+    transform: rotateY(180deg);
+}

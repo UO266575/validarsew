@@ -1,0 +1,97 @@
+/* José Antonio Pérez Miguel - UO266575 */
+
+/* Especificidad = 1 */
+body {
+    font-family: Verdana, Geneva, sans-serif;
+     color: #1F0D0B; /* Tienen el color de fondo definido por el base de la página o el fondo del header */
+}
+
+/* Especificidad = 1 */
+h1 {
+    font-size: 3em;
+}
+
+/* Especificidad = 1 */
+h2 {
+    font-style: italic;
+}
+
+/* Especificidad = 1 */
+h3 {
+    font-weight: lighter;
+}
+
+/* Especificidad = 1 */
+header {
+    background-color: #FDAA74;  /* Tiene el color primer plano definido por el body y nav */
+}
+
+/* Especificidad = 1 */
+nav {
+    background-color: #EA8A8D;  /* Tienen el color de primer plano establecido en nav a */
+}
+
+/* Especificidad = 2 */
+nav a {
+    color: #1F0D0B;     /* Tienen el color de fondo establecido en nav */
+    text-decoration: none;
+}
+
+/* Especificidad = 12 */
+nav a:hover {
+    font-weight: bold;
+}
+
+
+/* Especificidad = 11 */
+a:visited {
+    color: #1F0D0B;     /* Tienen el color de fondo establecido en fondo por defecto */
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Especificidad = 3 */
+ol li::marker {
+    font-variant-numeric: ordinal;
+    font-weight: bold;
+}
+
+/* Especificidad = 12 */
+ul li:nth-child(3) {
+    color: brown;   /* Tiene el color de fondo establecido en fondo por defecto */
+    font-size: 1.1em;
+}
+
+/* Especificidad = 1 */
+dl {
+    font-size: 1.01em;
+}
+
+/* Especificidad = 1 */
+dt {
+    font-weight: bold;
+}
+
+/* Especificidad = 1 */
+table,
+th,
+td {
+    border: 0.1em solid #ccc;
+}
+
+/* Especificidad = 1 */
+th {
+    background-color: #f0f0f0;      /* Tiene el color de primario establecido por defecto */
+}
+
+/* Especificidad = 1 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Especificidad = 1 */
+video {
+    max-width: 100%;
+    height: auto;
+}
