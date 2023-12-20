@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="José Antonio Pérez Miguel" />
+    <meta name="description" content="Documento con la información personal" />
+    <meta name="keywords" content="Sobre mí, About" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Escritorio Virtual - Sobre mí</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="./multimedia/img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="A" tabindex="1" href="agenda.html">Agenda</a>
+            <a accesskey="I" tabindex="2" href="index.html">Inicio</a>
+            <a accesskey="J" tabindex="3" href="juegos.html">Juegos</a>
+            <a accesskey="M" tabindex="4" href="meteorologia.html">Meteorología</a>
+            <a accesskey="N" tabindex="5" href="noticias.html">Noticias</a>
+            <a accesskey="S" tabindex="6" href="sobremi.html">Sobre mí</a>
+            <a accesskey="V" tabindex="7" href="viajes.php">Viajes</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Sobre mí</h2>
+        <picture>
+            <source media="(max-width: 465px)" srcset="./multimedia/img/fotoPersonalPequeña.jpg">
+            <source media="(max-width: 799px)" srcset="./multimedia/img/fotoPersonalMediana.jpg">
+            <source media="(min-width: 800px)" srcset="./multimedia/img/fotoPersonal.jpg">
+            <img src="./multimedia/img/fotoPersonal.jpeg" alt="Foto personal">
+        </picture>
+        <p>José Antonio Pérez Miguel - UO266575</p>
+        <p>Soy un estudiante de la Universidad de Oviedo, estudio Ingeniería Informática del Software y estoy cursando
+            la asignatura de Software y estándares para la Web.</p>
+        <section>
+            <h3>Aficiones:</h3>
+            <ul>
+                <li>Practicar deporte.
+                    <ul>
+                        <li>Baloncesto.</li>
+                        <li>Gimnasio.</li>
+                        <li>Senderismo.</li>
+                    </ul>
+                </li>
+                <li>Carpintería.</li>
+                <li>Fórmula 1.</li>
+            </ul>
+            <p>Aquí se puede ver un vídeo sobre Fernando Alonso:</p>
+
+            <video title="Video sobre Fernando Alonso" controls="" preload="auto">
+                <source src="./multimedia/video/elnano.mp4" type="video/mp4">
+                <source src="./multimedia/video/elnano.webm" type="video/webm">
+            </video>
+
+            <p>Y aquí puede escuchar un audio sobre Fernando Alonso:</p>
+
+            <audio title="Audio de Fernando Alonso" controls="">
+                <source src="./multimedia/audio/33.mp3" type="audio/mpeg">
+                <source src="./multimedia/audio/33.wav" type="audio/wav">
+            </audio>
+        </section>
+        <section>
+            <h3>Artistas musicales favoritos:</h3>
+            <ol>
+                <li>Ren.</li>
+                <li>Jungle.</li>
+                <li>Tai Verdes.</li>
+                <li>Half alive.</li>
+                <li>Spencer Sutherland.</li>
+            </ol>
+            <p>Aquí puede encontrar enlaces interesantes sobre los dos primeros artistas:</p>
+            <a href="https://open.spotify.com/intl-es/artist/0Repe2EiNjaFAFIukrroUM?si=NzQneM7FRtiz8aZ0wNIn6A"
+                title="Ren Spotify">Ren Spotify</a>
+            <a href="https://es.wikipedia.org/wiki/Jungle_(banda)" title="Jungle Wikipedia">Jungle Wikipedia</a>
+        </section>
+        <section>
+            <h3>Asignaturas favoritas:</h3>
+            <dl>
+                <dt>SDI</dt>
+                <dd>La asignatura de Sistemas distribuidos e Internet pertenece a la materia Sistemas Informáticos. A
+                    esta
+                    materia pertenece también la asignatura Sistemas Operativos (de cuarto semestre del grado),
+                    Seguridad de
+                    Sistemas Informáticos yAdministración de sistemas y redes, que se cursan al mismo tiempo que ésta en
+                    el
+                    sexto semestre del grado.</dd>
+
+                <dt>SSI</dt>
+                <dd>La asignatura de Seguridad de Sistemas Informáticos pertenece a la materia Sistemas Informáticos. A
+                    esta
+                    materia pertenece también la asignatura Sistemas Operativos (de cuarto semestre del grado) y las
+                    asignaturas Sistemas Distribuidos e Internet y Administración de Sistemas y Redes, que se cursan al
+                    mismo tiempo que ésta en el sexto semestre del grado.</dd>
+
+                <dt>CPM</dt>
+                <dd>Esta asignatura se enmarca dentro de la materia de Interacción y Multimedia, y en el módulo Común de
+                    Informática. Se imparte a continuación de la asignatura de "Tecnología y Paradigmas de Programación"
+                    del
+                    primer semestre. A esta materia corresponden también las asignaturas de "Software y Estándares para
+                    la
+                    Web", "Realidad y Accesibilidad Aumentadas" e "Informática Audiovisual".</dd>
+
+                <dt>Software para Robots</dt>
+                <dd>Esta asignatura optativa pertenece al Grado de Ingeniería Informática en Ingeniería del Software, en
+                    el
+                    módulo de Tecnología Complementaria, en su materia de Programación. La asignatura se imparte como
+                    optativa dentro del grado, en su primer semestre.</dd>
+
+                <dt>Algoritmia</dt>
+                <dd>Esta asignatura pertenece a la materia de Programación, y de forma transversal, al módulo Común de
+                    Informática. Se imparte en el segundo semestre de segundo curso y está muy relacionada con la
+                    asignatura
+                    de Estructura de Datos, que se imparte en el primer semestre del mismo curso.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <aside>
+
+        <table>
+            <caption>Hisórico temperaturas medias anuales de Oviedo</caption>
+            <tbody>
+                <tr>
+                    <th scope="col" id="año">Año</th>
+                    <th scope="col" id="temperatura">Temperatura Media (°C)</th>
+                </tr>
+                <tr>
+                    <th scope="row" id="2022">2022</th>
+                    <td headers="2022 temperatura">14.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2021">2021</th>
+                    <td headers="2021 temperatura">13.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2020">2020</th>
+                    <td headers="2020 temperatura">13.8</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2019">2019</th>
+                    <td headers="2019 temperatura">13.2</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2018">2018</th>
+                    <td headers="2018 temperatura">13.1</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2017">2017</th>
+                    <td headers="2017 temperatura">13.3</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2016">2016</th>
+                    <td headers="2016 temperatura">13.2</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2015">2015</th>
+                    <td headers="2015 temperatura">13.4</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2014">2014</th>
+                    <td headers="2014 temperatura">13.5</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="2013">2013</th>
+                    <td headers="2013 temperatura">12.3</td>
+                </tr>
+            </tbody>
+        </table>
+    </aside>
+</body>
+
+</html>
