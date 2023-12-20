@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="author" content="José Antonio Pérez Miguel">
+    <meta name="description" content="Documento para obtener información meteorológica">
+    <meta name="keywords" content="Tiempo, Meteorología">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escritorio Virtual - Meteorología</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/viajes.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/pais.js"></script>
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+
+<body>
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="A" tabindex="1" href="agenda.html">Agenda</a>
+            <a accesskey="I" tabindex="2" href="index.html">Inicio</a>
+            <a accesskey="J" tabindex="3" href="juegos.html">Juegos</a>
+            <a accesskey="M" tabindex="4" href="meteorologia.html">Meteorología</a>
+            <a accesskey="N" tabindex="5" href="noticias.html">Noticias</a>
+            <a accesskey="S" tabindex="6" href="sobremi.html">Sobre mí</a>
+            <a accesskey="V" tabindex="7" href="viajes.php">Viajes</a>
+        </nav>
+    </header>
+    <h2>Meteorología</h2>
+
+    <script>
+        const datosPais = {
+            nombre: "Guinea-Bissau",
+            capital: "Bissau",
+            poblacion: 1644000,
+            formaDeGobierno: "República semipresidencialista",
+            coordenadasCapital: { latitud: 11.8636, longitud: -15.5984, altitud: 23 },
+            religion: "Islam"
+        };
+        const pais = new Pais(datosPais.nombre, datosPais.capital, datosPais.poblacion);
+        pais.setRemainAtributes(datosPais.formaDeGobierno, datosPais.coordenadasCapital, datosPais.religion)
+        pais.getNombre()
+        pais.getCapital()
+        pais.getSecondaryInfo()
+
+        pais.getWeather();
+    </script><p>Guinea-Bissau</p><p>Bissau</p><ul><li>Población: 1644000</li><li>Forma de Gobierno: República semipresidencialista</li><li>Religión Mayoritaria: Islam</li></ul>
+
+
+<table><tr><th>Día</th><th>Min/Max Temp</th><th>Humedad</th><th>Estado del Cielo</th><th>Cantidad de Lluvia</th></tr><tr><td>2023-12-21</td><td>23.42°C / 23.42°C</td><td>Humedad: 24%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-22</td><td>22.4°C / 22.4°C</td><td>Humedad: 38%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-23</td><td>22.07°C / 22.07°C</td><td>Humedad: 50%</td><td><img src="https://openweathermap.org/img/wn/03n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-24</td><td>22.3°C / 22.3°C</td><td>Humedad: 58%</td><td><img src="https://openweathermap.org/img/wn/01n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-25</td><td>22.92°C / 22.92°C</td><td>Humedad: 60%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png"></td><td>0 mm</td></tr></table></body></html>
