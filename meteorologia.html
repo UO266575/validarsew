@@ -29,24 +29,25 @@
         </nav>
     </header>
     <h2>Meteorología</h2>
+    <main>
+        <script>
+            const datosPais = {
+                nombre: "Guinea-Bissau",
+                capital: "Bissau",
+                poblacion: 1644000,
+                formaDeGobierno: "República semipresidencialista",
+                coordenadasCapital: { latitud: 11.8636, longitud: -15.5984, altitud: 23 },
+                religion: "Islam"
+            };
+            const pais = new Pais(datosPais.nombre, datosPais.capital, datosPais.poblacion);
+            pais.setRemainAtributes(datosPais.formaDeGobierno, datosPais.coordenadasCapital, datosPais.religion)
+            pais.getNombre()
+            pais.getCapital()
+            pais.getSecondaryInfo()
 
-    <script>
-        const datosPais = {
-            nombre: "Guinea-Bissau",
-            capital: "Bissau",
-            poblacion: 1644000,
-            formaDeGobierno: "República semipresidencialista",
-            coordenadasCapital: { latitud: 11.8636, longitud: -15.5984, altitud: 23 },
-            religion: "Islam"
-        };
-        const pais = new Pais(datosPais.nombre, datosPais.capital, datosPais.poblacion);
-        pais.setRemainAtributes(datosPais.formaDeGobierno, datosPais.coordenadasCapital, datosPais.religion)
-        pais.getNombre()
-        pais.getCapital()
-        pais.getSecondaryInfo()
-
-        pais.getWeather();
-    </script><p>Guinea-Bissau</p><p>Bissau</p><ul><li>Población: 1644000</li><li>Forma de Gobierno: República semipresidencialista</li><li>Religión Mayoritaria: Islam</li></ul>
+            pais.getWeather();
+        </script><p>Guinea-Bissau</p><p>Bissau</p><ul><li>Población: 1644000</li><li>Forma de Gobierno: República semipresidencialista</li><li>Religión Mayoritaria: Islam</li></ul>
+    <table><tr><th>Día</th><th>Min/Max Temp</th><th>Humedad</th><th>Estado del Cielo</th><th>Cantidad de Lluvia</th></tr><tr><td>2023-12-21</td><td>23.42°C / 23.42°C</td><td>Humedad: 24%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png" alt="overcast clouds"></td><td>0 mm</td></tr><tr><td>2023-12-22</td><td>22.4°C / 22.4°C</td><td>Humedad: 38%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png" alt="overcast clouds"></td><td>0 mm</td></tr><tr><td>2023-12-23</td><td>22.07°C / 22.07°C</td><td>Humedad: 50%</td><td><img src="https://openweathermap.org/img/wn/03n@2x.png" alt="scattered clouds"></td><td>0 mm</td></tr><tr><td>2023-12-24</td><td>22.3°C / 22.3°C</td><td>Humedad: 58%</td><td><img src="https://openweathermap.org/img/wn/01n@2x.png" alt="clear sky"></td><td>0 mm</td></tr><tr><td>2023-12-25</td><td>22.92°C / 22.92°C</td><td>Humedad: 60%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png" alt="broken clouds"></td><td>0 mm</td></tr></table></main>
 
 
-<table><tr><th>Día</th><th>Min/Max Temp</th><th>Humedad</th><th>Estado del Cielo</th><th>Cantidad de Lluvia</th></tr><tr><td>2023-12-21</td><td>23.42°C / 23.42°C</td><td>Humedad: 24%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-22</td><td>22.4°C / 22.4°C</td><td>Humedad: 38%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-23</td><td>22.07°C / 22.07°C</td><td>Humedad: 50%</td><td><img src="https://openweathermap.org/img/wn/03n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-24</td><td>22.3°C / 22.3°C</td><td>Humedad: 58%</td><td><img src="https://openweathermap.org/img/wn/01n@2x.png"></td><td>0 mm</td></tr><tr><td>2023-12-25</td><td>22.92°C / 22.92°C</td><td>Humedad: 60%</td><td><img src="https://openweathermap.org/img/wn/04n@2x.png"></td><td>0 mm</td></tr></table></body></html>
+</body></html>
