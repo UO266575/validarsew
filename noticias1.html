@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="author" content="José Antonio Pérez Miguel">
+    <meta name="description" content="Documento para importar y añadir noticias">
+    <meta name="keywords" content="Noticias, Actualidad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escritorio Virtual - Noticias</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+
+    <script src="js/noticias.js"></script>
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+
+<body>
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="A" tabindex="1" href="agenda.html">Agenda</a>
+            <a accesskey="I" tabindex="2" href="index.html">Inicio</a>
+            <a accesskey="J" tabindex="3" href="juegos.html">Juegos</a>
+            <a accesskey="M" tabindex="4" href="meteorologia.html">Meteorología</a>
+            <a accesskey="N" tabindex="5" href="noticias.html">Noticias</a>
+            <a accesskey="S" tabindex="6" href="sobremi.html">Sobre mí</a>
+            <a accesskey="V" tabindex="7" href="viajes.php">Viajes</a>
+        </nav>
+    </header>
+    <h2>Noticias</h2>
+    <main>
+        <p>Seleccione un archivo de texto: </p>
+        <script>
+            const noticia = new Noticia();
+        </script><p>Este navegador soporta el API File </p>
+        <p><input type="file" id="archivoTexto" onchange="noticia.readInputFile(this.files);"></p>
+        <h3>Añadir noticia</h3>
+        <form>
+            <p>Título:</p>
+            <input type="text" name="titulo">
+            <p>Entradilla:</p>
+            <input type="text" name="entradilla">
+            <p>Texto:</p>
+            <input type="text" name="texto">
+            <p>Autor:</p>
+            <input type="text" name="autor">
+
+            <button type="button" onclick="noticia.agregarNoticia()">Agregar Noticia</button>
+        </form>
+    </main>
+
+
+</body>
+</html>
