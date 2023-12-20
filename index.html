@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="author" content="José Antonio Pérez Miguel">
+    <meta name="description" content="Documento inicial del Escritorio Virtual (Virtual Desktop)">
+    <meta name="keywords" content="Inicio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escritorio Virtual - Documento inicial</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/viajes.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/fondo.js"></script>
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+
+<body style="background-image: url(&quot;https://live.staticflickr.com/8714/16939591597_b7e56d088e_o.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="A" tabindex="1" href="agenda.html">Agenda</a>
+            <a accesskey="I" tabindex="2" href="index.html">Inicio</a>
+            <a accesskey="J" tabindex="3" href="juegos.html">Juegos</a>
+            <a accesskey="M" tabindex="4" href="meteorologia.html">Meteorología</a>
+            <a accesskey="N" tabindex="5" href="noticias.html">Noticias</a>
+            <a accesskey="S" tabindex="6" href="sobremi.html">Sobre mí</a>
+            <a accesskey="V" tabindex="7" href="viajes.php">Viajes</a>
+        </nav>
+    </header>
+    <h2>Inicio</h2>
+    <script>
+        const nombrePais = 'Guinea-Bissau';
+        const nombreCapital = 'Bissau';
+        const coordenadasCapital = {
+            latitud: 11.8636,
+            longitud: -15.5984
+        };
+
+        const fondo = new Fondo(nombrePais, nombreCapital, coordenadasCapital);
+
+        fondo.getImage();
+    </script>
+
+
+</body></html>
