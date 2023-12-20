@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="author" content="José Antonio Pérez Miguel">
+    <meta name="description" content="Documento para obtener la agenda de las carreras de F1">
+    <meta name="keywords" content="Agenda, F1, Calendario Carreras F1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escritorio Virtual - Agenda</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/agenda.js"></script>
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+
+<body>
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a accesskey="A" tabindex="1" href="agenda.html">Agenda</a>
+            <a accesskey="I" tabindex="2" href="index.html">Inicio</a>
+            <a accesskey="J" tabindex="3" href="juegos.html">Juegos</a>
+            <a accesskey="M" tabindex="4" href="meteorologia.html">Meteorología</a>
+            <a accesskey="N" tabindex="5" href="noticias.html">Noticias</a>
+            <a accesskey="S" tabindex="6" href="sobremi.html">Sobre mí</a>
+            <a accesskey="V" tabindex="7" href="viajes.php">Viajes</a>
+        </nav>
+    </header>
+    <h2>Agenda</h2>
+    <main>
+        <button>Obtener Agenda</button>
+
+        <script>
+            const agenda = new Agenda();
+            document.querySelector('button').addEventListener('click', function () {
+                agenda.getSchedule();
+            });
+        </script>
+    <table><tr><th>Carrera</th><th>Circuito</th><th>Coordenadas</th><th>Fecha y Hora</th></tr><tr><td>Bahrain Grand Prix</td><td>Bahrain International Circuit</td><td>26.0325, 50.5106</td><td>2023-03-05, 15:00:00Z</td></tr><tr><td>Saudi Arabian Grand Prix</td><td>Jeddah Corniche Circuit</td><td>21.6319, 39.1044</td><td>2023-03-19, 17:00:00Z</td></tr><tr><td>Australian Grand Prix</td><td>Albert Park Grand Prix Circuit</td><td>-37.8497, 144.968</td><td>2023-04-02, 05:00:00Z</td></tr><tr><td>Azerbaijan Grand Prix</td><td>Baku City Circuit</td><td>40.3725, 49.8533</td><td>2023-04-30, 11:00:00Z</td></tr><tr><td>Miami Grand Prix</td><td>Miami International Autodrome</td><td>25.9581, -80.2389</td><td>2023-05-07, 19:30:00Z</td></tr><tr><td>Monaco Grand Prix</td><td>Circuit de Monaco</td><td>43.7347, 7.42056</td><td>2023-05-28, 13:00:00Z</td></tr><tr><td>Spanish Grand Prix</td><td>Circuit de Barcelona-Catalunya</td><td>41.57, 2.26111</td><td>2023-06-04, 13:00:00Z</td></tr><tr><td>Canadian Grand Prix</td><td>Circuit Gilles Villeneuve</td><td>45.5, -73.5228</td><td>2023-06-18, 18:00:00Z</td></tr><tr><td>Austrian Grand Prix</td><td>Red Bull Ring</td><td>47.2197, 14.7647</td><td>2023-07-02, 13:00:00Z</td></tr><tr><td>British Grand Prix</td><td>Silverstone Circuit</td><td>52.0786, -1.01694</td><td>2023-07-09, 14:00:00Z</td></tr><tr><td>Hungarian Grand Prix</td><td>Hungaroring</td><td>47.5789, 19.2486</td><td>2023-07-23, 13:00:00Z</td></tr><tr><td>Belgian Grand Prix</td><td>Circuit de Spa-Francorchamps</td><td>50.4372, 5.97139</td><td>2023-07-30, 13:00:00Z</td></tr><tr><td>Dutch Grand Prix</td><td>Circuit Park Zandvoort</td><td>52.3888, 4.54092</td><td>2023-08-27, 13:00:00Z</td></tr><tr><td>Italian Grand Prix</td><td>Autodromo Nazionale di Monza</td><td>45.6156, 9.28111</td><td>2023-09-03, 13:00:00Z</td></tr><tr><td>Singapore Grand Prix</td><td>Marina Bay Street Circuit</td><td>1.2914, 103.864</td><td>2023-09-17, 12:00:00Z</td></tr><tr><td>Japanese Grand Prix</td><td>Suzuka Circuit</td><td>34.8431, 136.541</td><td>2023-09-24, 05:00:00Z</td></tr><tr><td>Qatar Grand Prix</td><td>Losail International Circuit</td><td>25.49, 51.4542</td><td>2023-10-08, 17:00:00Z</td></tr><tr><td>United States Grand Prix</td><td>Circuit of the Americas</td><td>30.1328, -97.6411</td><td>2023-10-22, 19:00:00Z</td></tr><tr><td>Mexico City Grand Prix</td><td>Autódromo Hermanos Rodríguez</td><td>19.4042, -99.0907</td><td>2023-10-29, 20:00:00Z</td></tr><tr><td>São Paulo Grand Prix</td><td>Autódromo José Carlos Pace</td><td>-23.7036, -46.6997</td><td>2023-11-05, 17:00:00Z</td></tr><tr><td>Las Vegas Grand Prix</td><td>Las Vegas Strip Street Circuit</td><td>36.1147, -115.173</td><td>2023-11-19, 06:00:00Z</td></tr><tr><td>Abu Dhabi Grand Prix</td><td>Yas Marina Circuit</td><td>24.4672, 54.6031</td><td>2023-11-26, 13:00:00Z</td></tr></table></main>
+
+
+</body>
+</html>
